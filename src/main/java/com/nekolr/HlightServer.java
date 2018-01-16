@@ -29,15 +29,20 @@ public class HlightServer extends NanoHTTPD {
         Method method = session.getMethod();
         String uri = session.getUri();
         HlightServer.LOG.info(session.getRemoteIpAddress() + " " + method + " '" + uri + "' ");
-        // POST需要parseBody
-        try {
-            session.parseBody(new HashMap<String, String>(2));
-        } catch (IOException e) {
-            return newFixedLengthResponse(NanoHTTPD.Response.Status.INTERNAL_ERROR, "text/plain", "SERVER INTERNAL ERROR: IOException: " + e.getMessage());
-        } catch (NanoHTTPD.ResponseException e) {
-            return newFixedLengthResponse(e.getStatus(), "text/plain", e.getMessage());
+
+        if("/pop".equals(uri)) {
+            // POST需要parseBody
+            try {
+                session.parseBody(new HashMap<String, String>(2));
+            } catch (IOException e) {
+                return newFixedLengthResponse(NanoHTTPD.Response.Status.INTERNAL_ERROR, "text/plain", "SERVER INTERNAL ERROR: IOException: " + e.getMessage());
+            } catch (NanoHTTPD.ResponseException e) {
+                return newFixedLengthResponse(e.getStatus(), "text/plain", e.getMessage());
+            }
+            return newFixedLengthResponse(this.renderHtml(session.getParms()));
+        } else {
+            return newFixedLengthResponse("<p>想什么呢:)</p>");
         }
-        return newFixedLengthResponse(this.renderHtml(session.getParms()));
     }
 
     private String renderHtml(Map<String, String> params) {
