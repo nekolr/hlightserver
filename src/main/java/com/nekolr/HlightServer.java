@@ -57,9 +57,9 @@ public class HlightServer extends NanoHTTPD {
         sb.append("<link rel='stylesheet' type='text/css' href='https://nekolr.com/SyntaxHighlighter/styles/SyntaxHighlighter.css'>");
         sb.append("</head>");
         sb.append("<body>");
-        sb.append("<pre class='" + lan + "' name='code' id='code'>");
+        sb.append("<textarea class='" + lan + "' name='code' id='code'>");
         sb.append("" + code + "");
-        sb.append("</pre>");
+        sb.append("</textarea>");
         sb.append("</body>");
         sb.append("<script src='https://nekolr.com/SyntaxHighlighter/scripts/shCore.js'></script>");
         sb.append("<script src='https://nekolr.com/SyntaxHighlighter/scripts/" + lan + ".js'></script>");
