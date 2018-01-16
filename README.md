@@ -8,5 +8,5 @@
 使用前请确保系统中安装有Java运行环境。
 
 - 下载release包，解压
-- 使用 `java -jar hlightserver.jar` 运行
+- 使用 `java -jar hlightserver-1.0.jar` 运行
 - 打开index.html，开始使用吧
