@@ -3,7 +3,9 @@
 虽然markdown已经普及，天然支持代码高亮，但是如果你想在文档格式的文件（如：doc/docx）中加入好看的代码，可以使用或部署该服务。
 该服务是一个Java编写的小型Web服务器，基于[nanohttpd](https://github.com/NanoHttpd/nanohttpd)开发。使用该服务可以将想要美化的代码提交由web服务器生成美化后的代码页面。   
 
-这里有一个正在使用中的例子：[Demo](https://nekolr.com/SyntaxHighlighter/)
+这里有一个正在使用中的例子：[Demo](https://nekolr.com/SyntaxHighlighter/)   
+
+![hlight](https://i.loli.net/2018/01/17/5a5f5d713e1ca.png)
 ## 使用
 使用前请确保系统中安装有Java运行环境。
 
