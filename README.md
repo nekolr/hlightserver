@@ -10,3 +10,5 @@
 - 下载release包，解压
 - 使用 `java -jar hlightserver-1.0.jar` 运行
 - 打开index.html，开始使用吧
+## 其他
+高亮插件使用的是[syntaxhighlighter](https://github.com/syntaxhighlighter/syntaxhighlighter)，不过似乎这一版的样式在github上找不到了，传送门：[老版本](https://code.google.com/archive/p/syntaxhighlighter/)
