@@ -5,7 +5,7 @@
 
 这里有一个正在使用中的例子：[Demo](https://nekolr.com/SyntaxHighlighter/)   
 
-![hlight](https://i.loli.net/2018/01/17/5a5f5d713e1ca.png)
+![hlight](https://github.com/nekolr/hlightserver/blob/master/preview.png)
 ## 使用
 使用前请确保系统中安装有Java运行环境。
 
